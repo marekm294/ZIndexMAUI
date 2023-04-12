@@ -1,23 +1,11 @@
-﻿using CommunityToolkit.Maui.Alerts;
-using CommunityToolkit.Maui.Markup;
-using System.Threading.Tasks;
-using System.Windows.Input;
+﻿namespace ZIndexMaui;
 
-namespace ZIndex;
+using CommunityToolkit.Maui.Alerts;
+using CommunityToolkit.Maui.Markup;
+using System.Windows.Input;
 
 internal class Dropdown : ContentView
 {
-
-    public static readonly BindableProperty IsDropDownVisibleProperty =
-            BindableProperty.Create(nameof(IsDropDownVisible), typeof(bool), typeof(Dropdown));
-
-    public bool IsDropDownVisible
-    {
-        get => (bool)GetValue(IsDropDownVisibleProperty);
-        set => SetValue(IsDropDownVisibleProperty, value);
-    }
-
-
     public Dropdown()
     {
         ItemSelectedCommand = new Command(() =>

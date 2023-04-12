@@ -1,8 +1,8 @@
-﻿using CommunityToolkit.Maui;
+﻿namespace ZIndexMaui;
+
+using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Markup;
 using Microsoft.Extensions.Logging;
-
-namespace ZIndexMaui;
 
 public static class MauiProgram
 {
